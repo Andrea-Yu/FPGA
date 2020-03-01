@@ -1,0 +1,7 @@
+文件清单：
+1. 汇报PPT: PPT.pptx
+2. 程序包：code.zip：
+	SD卡程序：TF-dev
+	摄像头测速程序：p_OV7670
+3. 报告：数字设计FPGA应用终极工程设计报告final.docx
+4. 测速演示视频和图片：progress_display

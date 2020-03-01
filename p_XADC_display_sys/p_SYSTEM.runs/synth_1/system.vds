@@ -1,0 +1,1168 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Oct 29 09:47:58 2019
+# Process ID: 37572
+# Current directory: C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1
+# Command line: vivado.exe -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+# Log file: C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/system.vds
+# Journal file: C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source system.tcl -notrace
+Command: synth_design -top system -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 33632 
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module XADC [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/XADC.v:23]
+WARNING: [Synth 8-2611] redeclaration of ansi port x_counter is not allowed [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/pro_vga.v:9]
+WARNING: [Synth 8-2611] redeclaration of ansi port y_counter is not allowed [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/pro_vga.v:10]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 440.090 ; gain = 115.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/system.v:22]
+INFO: [Synth 8-638] synthesizing module 'div_clk' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/div_clk.v:22]
+INFO: [Synth 8-256] done synthesizing module 'div_clk' (1#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/div_clk.v:22]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (2#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'seg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/seg.v:22]
+	Parameter half_duty bound to: 25000 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/seg.v:96]
+INFO: [Synth 8-256] done synthesizing module 'seg' (3#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/seg.v:22]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/uart_rx.v:22]
+	Parameter width bound to: 3 - type: integer 
+	Parameter idle bound to: 1 - type: integer 
+	Parameter one bound to: 2 - type: integer 
+	Parameter two bound to: 3 - type: integer 
+	Parameter stop bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/uart_rx.v:86]
+WARNING: [Synth 8-3848] Net rxd_buf in module/entity uart_rx does not have driver. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/uart_rx.v:31]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (4#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/uart_rx.v:22]
+INFO: [Synth 8-638] synthesizing module 'XADC' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/XADC.v:23]
+	Parameter init_read bound to: 8'b00000000 
+	Parameter read_waitdrdy bound to: 8'b00000001 
+	Parameter write_waitdrdy bound to: 8'b00000011 
+	Parameter read_reg00 bound to: 8'b00000100 
+	Parameter reg00_waitdrdy bound to: 8'b00000101 
+	Parameter read_reg01 bound to: 8'b00000110 
+	Parameter reg01_waitdrdy bound to: 8'b00000111 
+	Parameter read_reg02 bound to: 8'b00001000 
+	Parameter reg02_waitdrdy bound to: 8'b00001001 
+	Parameter read_reg06 bound to: 8'b00011010 
+	Parameter reg06_waitdrdy bound to: 8'b00011011 
+	Parameter read_reg17 bound to: 8'b00101100 
+	Parameter reg17_waitdrdy bound to: 8'b00101101 
+	Parameter read_reg18 bound to: 8'b01001110 
+	Parameter reg18_waitdrdy bound to: 8'b01001111 
+	Parameter read_reg1c bound to: 8'b01000000 
+	Parameter reg1c_waitdrdy bound to: 8'b10000001 
+	Parameter read_reg1e bound to: 8'b10000010 
+	Parameter reg1e_waitdrdy bound to: 8'b10000011 
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'xadc_wiz_0' (5#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/realtime/xadc_wiz_0_stub.v:5]
+WARNING: [Synth 8-689] width (2) of port connection 'den_in' does not match port width (1) of module 'xadc_wiz_0' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/XADC.v:85]
+WARNING: [Synth 8-689] width (2) of port connection 'dwe_in' does not match port width (1) of module 'xadc_wiz_0' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/XADC.v:87]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/XADC.v:113]
+INFO: [Synth 8-256] done synthesizing module 'XADC' (6#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/XADC.v:23]
+INFO: [Synth 8-638] synthesizing module 'vga_part' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_part.v:23]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (7#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (12) of module 'blk_mem_gen_0' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_part.v:71]
+WARNING: [Synth 8-350] instance 'uut_ram' of module 'blk_mem_gen_0' requires 8 connections, but only 7 given [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_part.v:66]
+INFO: [Synth 8-638] synthesizing module 'pro_data' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:1]
+	Parameter begin_temp bound to: 3000 - type: integer 
+	Parameter end_temp bound to: 4000 - type: integer 
+	Parameter begin_voltc bound to: 80 - type: integer 
+	Parameter end_voltc bound to: 120 - type: integer 
+	Parameter begin_voltb bound to: 80 - type: integer 
+	Parameter end_voltb bound to: 120 - type: integer 
+	Parameter begin_volt1 bound to: 0 - type: integer 
+	Parameter end_volt1 bound to: 100 - type: integer 
+	Parameter begin_volt2 bound to: 0 - type: integer 
+	Parameter end_volt2 bound to: 100 - type: integer 
+	Parameter begin_volt3 bound to: 0 - type: integer 
+	Parameter end_volt3 bound to: 100 - type: integer 
+	Parameter begin_volt4 bound to: 0 - type: integer 
+	Parameter end_volt4 bound to: 100 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'vga_data_volt1' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:247]
+WARNING: [Synth 8-567] referenced signal 'color_volt1' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:247]
+WARNING: [Synth 8-567] referenced signal 'length_volt1' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:247]
+WARNING: [Synth 8-567] referenced signal 'vga_data_volt2' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:247]
+WARNING: [Synth 8-567] referenced signal 'color_volt2' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:247]
+WARNING: [Synth 8-567] referenced signal 'length_volt2' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:247]
+WARNING: [Synth 8-567] referenced signal 'vga_data_volt3' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:247]
+WARNING: [Synth 8-567] referenced signal 'color_volt3' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:247]
+WARNING: [Synth 8-567] referenced signal 'length_volt3' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:247]
+WARNING: [Synth 8-567] referenced signal 'vga_data_volt4' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:247]
+WARNING: [Synth 8-567] referenced signal 'color_volt4' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:247]
+WARNING: [Synth 8-567] referenced signal 'length_volt4' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:247]
+INFO: [Synth 8-256] done synthesizing module 'pro_data' (8#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:1]
+INFO: [Synth 8-638] synthesizing module 'type1_vga' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:1]
+	Parameter ta bound to: 80 - type: integer 
+	Parameter tb bound to: 160 - type: integer 
+	Parameter tc bound to: 800 - type: integer 
+	Parameter td bound to: 40 - type: integer 
+	Parameter te bound to: 1056 - type: integer 
+	Parameter to bound to: 3 - type: integer 
+	Parameter tp bound to: 21 - type: integer 
+	Parameter tq bound to: 600 - type: integer 
+	Parameter tr bound to: 1 - type: integer 
+	Parameter ts bound to: 624 - type: integer 
+	Parameter bw bound to: 128 - type: integer 
+	Parameter bh bound to: 204 - type: integer 
+	Parameter carah bound to: 64 - type: integer 
+	Parameter caraw1 bound to: 64 - type: integer 
+	Parameter caraw2 bound to: 32 - type: integer 
+	Parameter temp bound to: 10 - type: integer 
+	Parameter volt bound to: 11 - type: integer 
+	Parameter chip bound to: 12 - type: integer 
+	Parameter BRAM bound to: 13 - type: integer 
+	Parameter mao bound to: 14 - type: integer 
+	Parameter xsd bound to: 15 - type: integer 
+	Parameter ssd bound to: 16 - type: integer 
+	Parameter ft bound to: 17 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'color_temp' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:23]
+WARNING: [Synth 8-567] referenced signal 'length_temp' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:23]
+WARNING: [Synth 8-567] referenced signal 'vga_data_temp' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:23]
+WARNING: [Synth 8-567] referenced signal 'color_voltc' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:23]
+WARNING: [Synth 8-567] referenced signal 'length_voltc' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:23]
+WARNING: [Synth 8-567] referenced signal 'vga_data_voltc' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:23]
+WARNING: [Synth 8-567] referenced signal 'color_voltb' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:23]
+WARNING: [Synth 8-567] referenced signal 'length_voltb' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:23]
+WARNING: [Synth 8-567] referenced signal 'vga_data_voltb' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:23]
+INFO: [Synth 8-256] done synthesizing module 'type1_vga' (9#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:1]
+INFO: [Synth 8-638] synthesizing module 'number_disp' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_disp.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_disp.v:22]
+WARNING: [Synth 8-567] referenced signal 'ramdouta' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_disp.v:19]
+WARNING: [Synth 8-567] referenced signal 'row' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_disp.v:102]
+WARNING: [Synth 8-567] referenced signal 'black' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_disp.v:102]
+WARNING: [Synth 8-567] referenced signal 'volum' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_disp.v:102]
+WARNING: [Synth 8-567] referenced signal 'vol_color' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_disp.v:102]
+INFO: [Synth 8-256] done synthesizing module 'number_disp' (10#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_disp.v:1]
+INFO: [Synth 8-638] synthesizing module 'type2_vga' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type2_vga.v:1]
+	Parameter ta bound to: 80 - type: integer 
+	Parameter tb bound to: 160 - type: integer 
+	Parameter tc bound to: 800 - type: integer 
+	Parameter td bound to: 40 - type: integer 
+	Parameter te bound to: 1056 - type: integer 
+	Parameter to bound to: 3 - type: integer 
+	Parameter tp bound to: 21 - type: integer 
+	Parameter tq bound to: 600 - type: integer 
+	Parameter tr bound to: 1 - type: integer 
+	Parameter ts bound to: 624 - type: integer 
+	Parameter bw bound to: 112 - type: integer 
+	Parameter bh bound to: 268 - type: integer 
+	Parameter carah bound to: 64 - type: integer 
+	Parameter caraw1 bound to: 64 - type: integer 
+	Parameter caraw2 bound to: 32 - type: integer 
+	Parameter temp bound to: 10 - type: integer 
+	Parameter volt bound to: 11 - type: integer 
+	Parameter chip bound to: 12 - type: integer 
+	Parameter BRAM bound to: 13 - type: integer 
+	Parameter mao bound to: 14 - type: integer 
+	Parameter xsd bound to: 15 - type: integer 
+	Parameter ssd bound to: 16 - type: integer 
+	Parameter ft bound to: 17 - type: integer 
+	Parameter channel bound to: 18 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'length_volto' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type2_vga.v:16]
+WARNING: [Synth 8-567] referenced signal 'channel_sel' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type2_vga.v:16]
+WARNING: [Synth 8-567] referenced signal 'vga_data_volto' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type2_vga.v:16]
+INFO: [Synth 8-256] done synthesizing module 'type2_vga' (11#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type2_vga.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux_vga' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:29]
+WARNING: [Synth 8-567] referenced signal 'x1' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'y1' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'black1' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'volum1' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'color1' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'x2' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'y2' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'black2' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'volum2' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'color_volto' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'x3' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'y3' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+WARNING: [Synth 8-567] referenced signal 'black3' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:27]
+INFO: [Synth 8-256] done synthesizing module 'mux_vga' (12#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:2]
+WARNING: [Synth 8-689] width (8) of port connection 'sel' does not match port width (9) of module 'mux_vga' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_part.v:168]
+INFO: [Synth 8-638] synthesizing module 'pro_vga' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/pro_vga.v:1]
+	Parameter ta bound to: 80 - type: integer 
+	Parameter tb bound to: 160 - type: integer 
+	Parameter tc bound to: 800 - type: integer 
+	Parameter td bound to: 40 - type: integer 
+	Parameter te bound to: 1056 - type: integer 
+	Parameter to bound to: 3 - type: integer 
+	Parameter tp bound to: 21 - type: integer 
+	Parameter tq bound to: 600 - type: integer 
+	Parameter tr bound to: 1 - type: integer 
+	Parameter ts bound to: 624 - type: integer 
+	Parameter bw bound to: 128 - type: integer 
+	Parameter bh bound to: 204 - type: integer 
+	Parameter carah bound to: 64 - type: integer 
+	Parameter caraw1 bound to: 64 - type: integer 
+	Parameter caraw2 bound to: 32 - type: integer 
+	Parameter temp bound to: 10 - type: integer 
+	Parameter volt bound to: 11 - type: integer 
+	Parameter chip bound to: 12 - type: integer 
+	Parameter BRAM bound to: 13 - type: integer 
+	Parameter mao bound to: 14 - type: integer 
+	Parameter xsd bound to: 15 - type: integer 
+	Parameter ssd bound to: 16 - type: integer 
+	Parameter ft bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pro_vga' (13#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/pro_vga.v:1]
+INFO: [Synth 8-638] synthesizing module 'type3_vga' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:1]
+	Parameter ta bound to: 80 - type: integer 
+	Parameter tb bound to: 160 - type: integer 
+	Parameter tc bound to: 800 - type: integer 
+	Parameter td bound to: 40 - type: integer 
+	Parameter te bound to: 1056 - type: integer 
+	Parameter to bound to: 3 - type: integer 
+	Parameter tp bound to: 21 - type: integer 
+	Parameter tq bound to: 600 - type: integer 
+	Parameter tr bound to: 1 - type: integer 
+	Parameter ts bound to: 624 - type: integer 
+	Parameter bw bound to: 80 - type: integer 
+	Parameter bh1 bound to: 107 - type: integer 
+	Parameter bh2 bound to: 86 - type: integer 
+	Parameter carah bound to: 32 - type: integer 
+	Parameter caraw1 bound to: 32 - type: integer 
+	Parameter caraw2 bound to: 16 - type: integer 
+	Parameter temp bound to: 10 - type: integer 
+	Parameter volt bound to: 11 - type: integer 
+	Parameter chip bound to: 12 - type: integer 
+	Parameter BRAM bound to: 13 - type: integer 
+	Parameter mao bound to: 14 - type: integer 
+	Parameter xsd bound to: 15 - type: integer 
+	Parameter ssd bound to: 16 - type: integer 
+	Parameter ft bound to: 17 - type: integer 
+	Parameter channel bound to: 18 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'vga_data_temp' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:19]
+WARNING: [Synth 8-567] referenced signal 'vga_data_volt1' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:19]
+WARNING: [Synth 8-567] referenced signal 'vga_data_voltc' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:19]
+WARNING: [Synth 8-567] referenced signal 'vga_data_volt2' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:19]
+WARNING: [Synth 8-567] referenced signal 'vga_data_voltb' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:19]
+WARNING: [Synth 8-567] referenced signal 'vga_data_volt3' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:19]
+WARNING: [Synth 8-567] referenced signal 'vga_data_volt4' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:19]
+INFO: [Synth 8-256] done synthesizing module 'type3_vga' (14#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:1]
+INFO: [Synth 8-638] synthesizing module 'vga_menu' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_menu.v:22]
+	Parameter ta bound to: 80 - type: integer 
+	Parameter tb bound to: 160 - type: integer 
+	Parameter tc bound to: 800 - type: integer 
+	Parameter td bound to: 16 - type: integer 
+	Parameter te bound to: 1056 - type: integer 
+	Parameter to bound to: 3 - type: integer 
+	Parameter tp bound to: 21 - type: integer 
+	Parameter tq bound to: 600 - type: integer 
+	Parameter tr bound to: 1 - type: integer 
+	Parameter ts bound to: 625 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'ramdouta0' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_menu.v:36]
+INFO: [Synth 8-256] done synthesizing module 'vga_menu' (15#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_menu.v:22]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (16#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'vga_disp' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_disp.v:23]
+WARNING: [Synth 8-567] referenced signal 'vgaRed0' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_disp.v:36]
+WARNING: [Synth 8-567] referenced signal 'vgaBlue0' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_disp.v:36]
+WARNING: [Synth 8-567] referenced signal 'vgaGreen0' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_disp.v:36]
+WARNING: [Synth 8-567] referenced signal 'vgaRed1' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_disp.v:36]
+WARNING: [Synth 8-567] referenced signal 'vgaBlue1' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_disp.v:36]
+WARNING: [Synth 8-567] referenced signal 'vgaGreen1' should be on the sensitivity list [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_disp.v:36]
+INFO: [Synth 8-256] done synthesizing module 'vga_disp' (17#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_disp.v:23]
+INFO: [Synth 8-256] done synthesizing module 'vga_part' (18#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_part.v:23]
+INFO: [Synth 8-256] done synthesizing module 'system' (19#1) [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/system.v:22]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_TEMP[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_TEMP[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_TEMP[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_TEMP[0]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCINT[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCINT[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCINT[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCINT[0]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCBRAM[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCBRAM[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCBRAM[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCBRAM[0]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX6[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX6[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX6[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX6[0]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX7[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX7[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX7[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX7[0]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX14[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX14[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX14[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX14[0]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX15[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX15[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX15[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX15[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 489.898 ; gain = 165.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 489.898 ; gain = 165.293
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/dcp4/xadc_wiz_0_in_context.xdc] for cell 'XADC1/xadc1'
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/dcp4/xadc_wiz_0_in_context.xdc] for cell 'XADC1/xadc1'
+Parsing XDC File [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/dcp5/blk_mem_gen_0_in_context.xdc] for cell 'u_vga_p/uut_ram'
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/dcp5/blk_mem_gen_0_in_context.xdc] for cell 'u_vga_p/uut_ram'
+Parsing XDC File [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/dcp6/clk_wiz_0_in_context.xdc] for cell 'uut_clk'
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/dcp6/clk_wiz_0_in_context.xdc] for cell 'uut_clk'
+Parsing XDC File [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/dcp7/blk_mem_gen_1_in_context.xdc] for cell 'u_vga_p/uut_ram1'
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/dcp7/blk_mem_gen_1_in_context.xdc] for cell 'u_vga_p/uut_ram1'
+Parsing XDC File [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc]
+WARNING: [Vivado 12-584] No ports matched 'txd'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'txd'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'row[0]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'row[0]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'row[1]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'row[1]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'row[2]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'row[2]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'row[3]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'row[3]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc:136]
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/system_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 835.883 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 835.883 ; gain = 511.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 835.883 ; gain = 511.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/dcp6/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/.Xil/Vivado-37572-DESKTOP-FKSGOEO/dcp6/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for XADC1/xadc1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_vga_p/uut_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_vga_p/uut_ram1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for uut_clk. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 835.883 ; gain = 511.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk_ms" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "btnclk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "btnclk_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_16x" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_x" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "clk_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "div_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rxd1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_out1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'XADC__mod'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "channel_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:31]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:85]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:144]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type2_vga.v:23]
+INFO: [Synth 8-5546] ROM "x" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:229]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:126]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/uart_rx.v:64]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               init_read |                            00000 |                         00000000
+           read_waitdrdy |                            00001 |                         00000001
+          write_waitdrdy |                            00010 |                         00000011
+              read_reg00 |                            00011 |                         00000100
+          reg00_waitdrdy |                            00100 |                         00000101
+              read_reg01 |                            00101 |                         00000110
+          reg01_waitdrdy |                            00110 |                         00000111
+              read_reg06 |                            00111 |                         00011010
+          reg06_waitdrdy |                            01000 |                         00011011
+              read_reg17 |                            01001 |                         00101100
+          reg17_waitdrdy |                            01010 |                         00101101
+              read_reg18 |                            01011 |                         01001110
+          reg18_waitdrdy |                            01100 |                         01001111
+              read_reg1c |                            01101 |                         01000000
+          reg1c_waitdrdy |                            01110 |                         10000001
+              read_reg1e |                            01111 |                         10000010
+          reg1e_waitdrdy |                            10000 |                         10000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'XADC__mod'
+WARNING: [Synth 8-327] inferring latch for variable 'length_volto_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:255]
+WARNING: [Synth 8-327] inferring latch for variable 'color_temp_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'color_voltb_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:116]
+WARNING: [Synth 8-327] inferring latch for variable 'color_voltc_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:89]
+WARNING: [Synth 8-327] inferring latch for variable 'color_volto_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:254]
+WARNING: [Synth 8-327] inferring latch for variable 'channel_sel_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:253]
+WARNING: [Synth 8-327] inferring latch for variable 'color_volt1_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:148]
+WARNING: [Synth 8-327] inferring latch for variable 'color_volt2_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:175]
+WARNING: [Synth 8-327] inferring latch for variable 'color_volt3_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:202]
+WARNING: [Synth 8-327] inferring latch for variable 'color_volt4_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:229]
+WARNING: [Synth 8-327] inferring latch for variable 'x1_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'y1_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'num1_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'volum1_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'color1_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_vga.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'row_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type1_disp.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'x2_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type2_vga.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'y2_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type2_vga.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'num2_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type2_vga.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'volum2_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type2_vga.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'num_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'x_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'black_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'volum_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'vol_color_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/mux_vga.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'x3_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'y3_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'num3_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/type3_vga.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'ramaddra0_reg' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/vga_menu.v:40]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 835.883 ; gain = 511.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 14    
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 14    
+	   2 Input      6 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               25 Bit    Registers := 1     
+	               16 Bit    Registers := 31    
+	               15 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Multipliers : 
+	                 8x32  Multipliers := 3     
+	                 5x32  Multipliers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     25 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 14    
+	   3 Input     12 Bit        Muxes := 3     
+	   5 Input     12 Bit        Muxes := 1     
+	   7 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 13    
+	   5 Input      8 Bit        Muxes := 2     
+	  17 Input      8 Bit        Muxes := 1     
+	  17 Input      7 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 12    
+	   7 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 3     
+	  26 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 92    
+	   7 Input      5 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	  17 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 42    
+	   5 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 4     
+	  20 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module div_clk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     25 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               25 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module seg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+Module XADC__mod 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	  17 Input      8 Bit        Muxes := 1     
+	  17 Input      7 Bit        Muxes := 1     
+	  26 Input      5 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	  17 Input      2 Bit        Muxes := 2     
+	  17 Input      1 Bit        Muxes := 12    
+Module pro_data 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 10    
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 22    
++---Multipliers : 
+	                 8x32  Multipliers := 3     
+	                 5x32  Multipliers := 10    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 7     
+	   3 Input     12 Bit        Muxes := 3     
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 10    
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 1     
+Module type1_vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 26    
+	   2 Input      1 Bit        Muxes := 9     
+	   7 Input      1 Bit        Muxes := 1     
+Module number_disp 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	  20 Input      1 Bit        Muxes := 1     
+Module type2_vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+	   7 Input      1 Bit        Muxes := 1     
+Module mux_vga 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   7 Input     12 Bit        Muxes := 2     
+	   7 Input      7 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+Module pro_vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module type3_vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 7     
+	   2 Input      6 Bit       Adders := 4     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 12    
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 66    
+	   2 Input      1 Bit        Muxes := 8     
+	   9 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 2     
+Module vga_menu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+Module vga_disp 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'volt1_hex_reg[15:0]' into 'volt1_hex_reg[15:0]' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:49]
+INFO: [Synth 8-4471] merging register 'volt2_hex_reg[15:0]' into 'volt2_hex_reg[15:0]' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:51]
+INFO: [Synth 8-4471] merging register 'volt3_hex_reg[15:0]' into 'volt3_hex_reg[15:0]' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:53]
+INFO: [Synth 8-4471] merging register 'volt4_hex_reg[15:0]' into 'volt4_hex_reg[15:0]' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:55]
+INFO: [Synth 8-4471] merging register 'volt1_hex_reg[15:0]' into 'volt1_hex_reg[15:0]' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:49]
+INFO: [Synth 8-4471] merging register 'volt2_hex_reg[15:0]' into 'volt2_hex_reg[15:0]' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:51]
+INFO: [Synth 8-4471] merging register 'volt3_hex_reg[15:0]' into 'volt3_hex_reg[15:0]' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:53]
+INFO: [Synth 8-4471] merging register 'volt4_hex_reg[15:0]' into 'volt4_hex_reg[15:0]' [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:55]
+WARNING: [Synth 8-6014] Unused sequential element volt1_hex_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:49]
+WARNING: [Synth 8-6014] Unused sequential element volt2_hex_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:51]
+WARNING: [Synth 8-6014] Unused sequential element volt3_hex_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:53]
+WARNING: [Synth 8-6014] Unused sequential element volt4_hex_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:55]
+WARNING: [Synth 8-6014] Unused sequential element volt1_hex_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:49]
+WARNING: [Synth 8-6014] Unused sequential element volt2_hex_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:51]
+WARNING: [Synth 8-6014] Unused sequential element volt3_hex_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:53]
+WARNING: [Synth 8-6014] Unused sequential element volt4_hex_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/data_pro.v:55]
+DSP Report: Generating DSP temp_hex2, operation Mode is: (A:0xc4de)*B.
+DSP Report: operator temp_hex2 is absorbed into DSP temp_hex2.
+DSP Report: Generating DSP voltb_hex1, operation Mode is: A*(B:0x12c).
+DSP Report: operator voltb_hex1 is absorbed into DSP voltb_hex1.
+DSP Report: Generating DSP voltc_hex1, operation Mode is: A*(B:0x12c).
+DSP Report: operator voltc_hex1 is absorbed into DSP voltc_hex1.
+DSP Report: Generating DSP volt1_hex1, operation Mode is: A*(B:0x60).
+DSP Report: operator volt1_hex1 is absorbed into DSP volt1_hex1.
+DSP Report: Generating DSP volt2_hex1, operation Mode is: A*(B:0x60).
+DSP Report: operator volt2_hex1 is absorbed into DSP volt2_hex1.
+DSP Report: Generating DSP volt3_hex1, operation Mode is: A*(B:0x60).
+DSP Report: operator volt3_hex1 is absorbed into DSP volt3_hex1.
+DSP Report: Generating DSP volt4_hex1, operation Mode is: A*(B:0x60).
+DSP Report: operator volt4_hex1 is absorbed into DSP volt4_hex1.
+INFO: [Synth 8-5546] ROM "y_counter" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP ramaddra01, operation Mode is: A*(B:0x320).
+DSP Report: operator ramaddra01 is absorbed into DSP ramaddra01.
+DSP Report: Generating DSP ramaddra00, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff10).
+DSP Report: operator ramaddra00 is absorbed into DSP ramaddra00.
+WARNING: [Synth 8-6014] Unused sequential element my_divclk/cnt1_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/div_clk.v:39]
+WARNING: [Synth 8-6014] Unused sequential element my_divclk/clk_ms_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/div_clk.v:41]
+WARNING: [Synth 8-6014] Unused sequential element my_divclk/btnclk_cnt_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/div_clk.v:51]
+WARNING: [Synth 8-6014] Unused sequential element my_divclk/btnclk_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/div_clk.v:53]
+WARNING: [Synth 8-6014] Unused sequential element my_divclk/cnt3_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/div_clk.v:74]
+WARNING: [Synth 8-6014] Unused sequential element my_divclk/clk_x_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/div_clk.v:76]
+WARNING: [Synth 8-6014] Unused sequential element uut_uart_rx/data_ready_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/uart_rx.v:80]
+WARNING: [Synth 8-6014] Unused sequential element uut_uart_rx/data_error_reg was removed.  [C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.srcs/sources_1/new/uart_rx.v:110]
+INFO: [Synth 8-5545] ROM "my_divclk/cnt2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "my_divclk/clk_16x" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "my_divclk/clk_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uut_seg/div_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uut_uart_rx/data_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uut_uart_rx/data_ready" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design system has port seg[7] driven by constant 0
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_TEMP[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_TEMP[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_TEMP[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_TEMP[0]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCINT[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCINT[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCINT[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCINT[0]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCBRAM[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCBRAM[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCBRAM[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_VCCBRAM[0]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX6[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX6[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX6[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX6[0]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX7[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX7[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX7[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX7[0]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX14[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX14[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX14[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX14[0]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX15[3]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX15[2]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX15[1]
+WARNING: [Synth 8-3331] design pro_data has unconnected port MEASURED_AUX15[0]
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_voltc_reg[14]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_voltb_reg[14]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt4_reg[10]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt3_reg[10]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt2_reg[10]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt1_reg[10]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt4_reg[14]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt3_reg[14]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt2_reg[14]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt1_reg[14]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_voltc_reg[15]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_voltb_reg[15]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt4_reg[11]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt3_reg[11]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt2_reg[11]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt1_reg[11]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt4_reg[15]' (FD) to 'u_vga_p/pro_data1/vga_data_volt2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt3_reg[15]' (FD) to 'u_vga_p/pro_data1/vga_data_volt2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt2_reg[15]' (FD) to 'u_vga_p/pro_data1/vga_data_voltc_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt1_reg[15]' (FD) to 'u_vga_p/pro_data1/vga_data_voltc_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_voltc_reg[13]' (FD) to 'u_vga_p/pro_data1/vga_data_voltc_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_voltb_reg[13]' (FD) to 'u_vga_p/pro_data1/vga_data_voltc_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_voltc_reg[12]' (FD) to 'u_vga_p/pro_data1/vga_data_voltb_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_vga_p/pro_data1 /\vga_data_voltb_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_vga_p/type3_vga1/y3_reg[0] )
+INFO: [Synth 8-3886] merging instance 'XADC1/daddr_reg[1]' (FDE) to 'XADC1/daddr_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\XADC1/daddr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type2_vga1/volum2_reg[0]' (LD) to 'u_vga_p/type2_vga1/volum2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type1_vga1/volum1_reg[0]' (LD) to 'u_vga_p/type1_vga1/volum1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type2_vga1/volum2_reg[1]' (LD) to 'u_vga_p/type2_vga1/volum2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type1_vga1/volum1_reg[1]' (LD) to 'u_vga_p/type1_vga1/volum1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type2_vga1/volum2_reg[2]' (LD) to 'u_vga_p/type2_vga1/volum2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type1_vga1/volum1_reg[2]' (LD) to 'u_vga_p/type1_vga1/volum1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type2_vga1/volum2_reg[3]' (LD) to 'u_vga_p/type2_vga1/volum2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type1_vga1/volum1_reg[3]' (LD) to 'u_vga_p/type1_vga1/volum1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type2_vga1/volum2_reg[4]' (LD) to 'u_vga_p/type2_vga1/volum2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type1_vga1/volum1_reg[4]' (LD) to 'u_vga_p/type1_vga1/volum1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type2_vga1/volum2_reg[5]' (LD) to 'u_vga_p/type2_vga1/volum2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type1_vga1/volum1_reg[5]' (LD) to 'u_vga_p/type1_vga1/volum1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type2_vga1/volum2_reg[6]' (LD) to 'u_vga_p/type2_vga1/volum2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type1_vga1/volum1_reg[6]' (LD) to 'u_vga_p/type1_vga1/volum1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type2_vga1/volum2_reg[7]' (LD) to 'u_vga_p/type2_vga1/volum2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type1_vga1/volum1_reg[7]' (LD) to 'u_vga_p/type1_vga1/volum1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type2_vga1/volum2_reg[8]' (LD) to 'u_vga_p/type2_vga1/volum2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type1_vga1/volum1_reg[8]' (LD) to 'u_vga_p/type1_vga1/volum1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type2_vga1/volum2_reg[9]' (LD) to 'u_vga_p/type2_vga1/volum2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type1_vga1/volum1_reg[9]' (LD) to 'u_vga_p/type1_vga1/volum1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type2_vga1/volum2_reg[10]' (LD) to 'u_vga_p/type2_vga1/volum2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/type1_vga1/volum1_reg[10]' (LD) to 'u_vga_p/type1_vga1/volum1_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_vga_p/type3_vga1/x3_reg[0] )
+INFO: [Synth 8-3886] merging instance 'u_vga_p/mux_vga1/volum_reg[0]' (LD) to 'u_vga_p/mux_vga1/volum_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/mux_vga1/volum_reg[1]' (LD) to 'u_vga_p/mux_vga1/volum_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/mux_vga1/volum_reg[2]' (LD) to 'u_vga_p/mux_vga1/volum_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/mux_vga1/volum_reg[3]' (LD) to 'u_vga_p/mux_vga1/volum_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/mux_vga1/volum_reg[4]' (LD) to 'u_vga_p/mux_vga1/volum_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/mux_vga1/volum_reg[5]' (LD) to 'u_vga_p/mux_vga1/volum_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/mux_vga1/volum_reg[6]' (LD) to 'u_vga_p/mux_vga1/volum_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/mux_vga1/volum_reg[7]' (LD) to 'u_vga_p/mux_vga1/volum_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/mux_vga1/volum_reg[8]' (LD) to 'u_vga_p/mux_vga1/volum_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/mux_vga1/volum_reg[9]' (LD) to 'u_vga_p/mux_vga1/volum_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/mux_vga1/volum_reg[10]' (LD) to 'u_vga_p/mux_vga1/volum_reg[11]'
+WARNING: [Synth 8-3332] Sequential element (vga_data_voltb_reg[12]) is unused and will be removed from module pro_data.
+WARNING: [Synth 8-3332] Sequential element (u_vga_p/type3_vga1/x3_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (u_vga_p/type3_vga1/y3_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_TEMP_reg[3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_TEMP_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_TEMP_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_TEMP_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_VCCINT_reg[3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_VCCINT_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_VCCINT_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_VCCINT_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_VCCBRAM_reg[3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_VCCBRAM_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_VCCBRAM_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_VCCBRAM_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX6_reg[3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX6_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX6_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX6_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX7_reg[3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX7_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX7_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX7_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX14_reg[3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX14_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX14_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX14_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX15_reg[3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX15_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX15_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/MEASURED_AUX15_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/daddr_reg[5]) is unused and will be removed from module system.
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_voltc_reg[11]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_voltb_reg[11]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt2_reg[13]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt3_reg[13]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt1_reg[13]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt4_reg[13]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt1_reg[12]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_temp_reg[0]' (FD) to 'u_vga_p/pro_data1/temp_hex_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt2_reg[12]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/vga_data_volt3_reg[12]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_vga_p/pro_data1 /\vga_data_volt4_reg[12] )
+WARNING: [Synth 8-3332] Sequential element (uut_uart_rx/next_state_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (uut_uart_rx/next_state_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (uut_uart_rx/next_state_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (vga_data_volt4_reg[12]) is unused and will be removed from module pro_data.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:44 ; elapsed = 00:01:51 . Memory (MB): peak = 835.883 ; gain = 511.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|system      | XADC1/     | 32x8          | LUT            | 
++------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pro_data    | (A:0xc4de)*B                      | 12     | 16     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pro_data    | A*(B:0x12c)                       | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pro_data    | A*(B:0x12c)                       | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pro_data    | A*(B:0x60)                        | 12     | 7      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pro_data    | A*(B:0x60)                        | 12     | 7      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pro_data    | A*(B:0x60)                        | 12     | 7      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pro_data    | A*(B:0x60)                        | 12     | 7      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|vga_menu    | A*(B:0x320)                       | 19     | 10     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|vga_menu    | PCIN+(A:0x0):B+(C:0xffffffffff10) | 30     | 11     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'uut_clk/clk_out1' to pin 'uut_clk/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:04 ; elapsed = 00:02:12 . Memory (MB): peak = 989.777 ; gain = 665.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:06 ; elapsed = 00:02:14 . Memory (MB): peak = 1019.730 ; gain = 695.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/volt4_hex_reg[0]' (FD) to 'u_vga_p/pro_data1/vga_data_volt4_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/volt1_hex_reg[0]' (FD) to 'u_vga_p/pro_data1/vga_data_volt1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/volt3_hex_reg[0]' (FD) to 'u_vga_p/pro_data1/vga_data_volt3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/volt2_hex_reg[0]' (FD) to 'u_vga_p/pro_data1/vga_data_volt2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/voltc_hex_reg[0]' (FD) to 'u_vga_p/pro_data1/vga_data_voltc_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_vga_p/pro_data1/voltb_hex_reg[0]' (FD) to 'u_vga_p/pro_data1/vga_data_voltb_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (XADC1/test_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/test_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (XADC1/test_reg[0]) is unused and will be removed from module system.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:13 ; elapsed = 00:02:20 . Memory (MB): peak = 1143.430 ; gain = 818.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \XADC1/xadc1  has unconnected pin vp_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \XADC1/xadc1  has unconnected pin vn_in
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:15 ; elapsed = 00:02:23 . Memory (MB): peak = 1143.430 ; gain = 818.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:15 ; elapsed = 00:02:23 . Memory (MB): peak = 1143.430 ; gain = 818.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:17 ; elapsed = 00:02:24 . Memory (MB): peak = 1143.430 ; gain = 818.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:17 ; elapsed = 00:02:24 . Memory (MB): peak = 1143.430 ; gain = 818.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:17 ; elapsed = 00:02:24 . Memory (MB): peak = 1143.430 ; gain = 818.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:17 ; elapsed = 00:02:24 . Memory (MB): peak = 1143.430 ; gain = 818.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |xadc_wiz_0    |         1|
+|3     |blk_mem_gen_0 |         1|
+|4     |blk_mem_gen_1 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |blk_mem_gen_1 |     1|
+|3     |clk_wiz_0     |     1|
+|4     |xadc_wiz_0    |     1|
+|5     |BUFG          |     4|
+|6     |CARRY4        |  1277|
+|7     |DSP48E1       |     1|
+|8     |DSP48E1_2     |     1|
+|9     |DSP48E1_3     |     7|
+|10    |LUT1          |   466|
+|11    |LUT2          |  1661|
+|12    |LUT3          |  1994|
+|13    |LUT4          |  1378|
+|14    |LUT5          |   909|
+|15    |LUT6          |  1928|
+|16    |MUXF7         |     9|
+|17    |FDRE          |   303|
+|18    |FDSE          |     2|
+|19    |LD            |   300|
+|20    |LDC           |    40|
+|21    |LDP           |    12|
+|22    |IBUF          |     9|
+|23    |OBUF          |    39|
+|24    |OBUFT         |     1|
++------+--------------+------+
+
+Report Instance Areas: 
++------+-----------------+------------+------+
+|      |Instance         |Module      |Cells |
++------+-----------------+------------+------+
+|1     |top              |            | 10502|
+|2     |  XADC1          |XADC__mod   |    91|
+|3     |  my_divclk      |div_clk     |    93|
+|4     |  u_vga_p        |vga_part    |  9455|
+|5     |    mux_vga1     |mux_vga     |    44|
+|6     |    number_disp1 |number_disp |   185|
+|7     |    pro_data1    |pro_data    |  8230|
+|8     |    pro_vga1     |pro_vga     |   287|
+|9     |    type1_vga1   |type1_vga   |   504|
+|10    |    type2_vga1   |type2_vga   |    38|
+|11    |    type3_vga1   |type3_vga   |    16|
+|12    |    uut_vga_menu |vga_menu    |    21|
+|13    |  uut_seg        |seg         |    60|
+|14    |  uut_uart_rx    |uart_rx     |   106|
++------+-----------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:17 ; elapsed = 00:02:24 . Memory (MB): peak = 1143.430 ; gain = 818.824
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 115 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:46 ; elapsed = 00:02:06 . Memory (MB): peak = 1143.430 ; gain = 472.840
+Synthesis Optimization Complete : Time (s): cpu = 00:02:17 ; elapsed = 00:02:25 . Memory (MB): peak = 1143.430 ; gain = 818.824
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1656 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 352 instances were transformed.
+  LD => LDCE: 300 instances
+  LDC => LDCE: 40 instances
+  LDP => LDPE: 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+190 Infos, 257 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:26 ; elapsed = 00:02:36 . Memory (MB): peak = 1143.430 ; gain = 830.703
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/synth_1/system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 1143.430 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 09:51:03 2019...

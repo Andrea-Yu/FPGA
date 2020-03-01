@@ -1,0 +1,113 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Oct 29 09:53:15 2019
+| Host         : DESKTOP-FKSGOEO running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file system_control_sets_placed.rpt
+| Design       : system
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    44 |
+| Unused register locations in slices containing registers |   129 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             487 |          236 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             127 |           44 |
+| Yes          | No                    | No                     |              32 |           14 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              25 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------+----------------------------------------+-----------------------------------------------+------------------+----------------+
+|                  Clock Signal                  |              Enable Signal             |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++------------------------------------------------+----------------------------------------+-----------------------------------------------+------------------+----------------+
+|  uut_seg/div_clk                               |                                        | uut_seg/bit_code[3]_i_1_n_1                   |                1 |              1 |
+|  uut_seg/div_clk                               |                                        | uut_seg/disp_bit[0]_i_1_n_1                   |                1 |              1 |
+|  clk_16x_BUFG                                  | uut_uart_rx/data_out[7]_i_1_n_1        |                                               |                1 |              1 |
+|  clk_16x_BUFG                                  | uut_uart_rx/rxd2                       |                                               |                1 |              1 |
+|  u_vga_p/pro_data1/color_volt2_reg[11]_i_2_n_1 |                                        | u_vga_p/pro_data1/color_volt2_reg[11]_i_3_n_1 |                1 |              4 |
+|  uut_seg/div_clk                               |                                        | uut_seg/disp_data[3]_i_1_n_1                  |                1 |              4 |
+|  u_vga_p/pro_data1/color_voltc_reg[11]_i_2_n_1 |                                        | u_vga_p/pro_data1/color_voltc_reg[11]_i_3_n_1 |                2 |              4 |
+|  u_vga_p/pro_data1/color_temp_reg[11]_i_2_n_1  |                                        | u_vga_p/pro_data1/color_temp_reg[11]_i_3_n_1  |                2 |              4 |
+|  u_vga_p/pro_data1/color_voltb_reg[11]_i_2_n_1 |                                        | u_vga_p/pro_data1/color_voltb_reg[11]_i_3_n_1 |                2 |              4 |
+|  u_vga_p/pro_data1/vgaRed[3][0]                |                                        | u_vga_p/pro_data1/color_volt4_reg[11]_i_3_n_1 |                1 |              4 |
+|  uut_clk/inst/clk_out1                         | u_vga_p/pro_vga1/y_counter[10]_i_1_n_1 | u_vga_p/pro_vga1/y_counter[9]_i_1_n_1         |                1 |              4 |
+|  u_vga_p/pro_data1/E[0]                        |                                        | u_vga_p/pro_data1/color_volt1_reg[11]_i_3_n_1 |                2 |              4 |
+|  u_vga_p/pro_data1/color_volt3_reg[11]_i_2_n_1 |                                        | u_vga_p/pro_data1/color_volt3_reg[11]_i_3_n_1 |                3 |              4 |
+|  clk_IBUF_BUFG                                 | XADC1/daddr[6]_i_2_n_1                 | XADC1/daddr[6]_i_1_n_1                        |                2 |              5 |
+|  u_vga_p/pro_vga1/vgaBlue[0]_4[0]              |                                        |                                               |                3 |              5 |
+|  clk_IBUF_BUFG                                 | XADC1/FSM_sequential_state[4]_i_1_n_1  |                                               |                2 |              5 |
+|  uut_seg/div_clk                               |                                        |                                               |                3 |              7 |
+|  u_vga_p/pro_vga1/vgaBlue[0]_7[0]              |                                        |                                               |                3 |              7 |
+|  uut_clk/inst/clk_out1                         | u_vga_p/pro_vga1/y_counter[10]_i_1_n_1 |                                               |                6 |              7 |
+|  u_vga_p/pro_data1/color_voltb_reg[11]_i_2_n_1 |                                        | u_vga_p/pro_data1/color_voltb1                |                3 |              8 |
+|  u_vga_p/pro_data1/color_voltc_reg[11]_i_2_n_1 |                                        | u_vga_p/pro_data1/color_voltc1                |                2 |              8 |
+|  u_vga_p/pro_data1/E[0]                        |                                        |                                               |                4 |              8 |
+|  u_vga_p/pro_data1/vgaRed[3][0]                |                                        |                                               |                3 |              8 |
+|  u_vga_p/pro_data1/color_temp_reg[11]_i_2_n_1  |                                        | u_vga_p/pro_data1/color_temp1                 |                5 |              8 |
+|  u_vga_p/pro_data1/color_volt2_reg[11]_i_2_n_1 |                                        |                                               |                3 |              8 |
+|  clk_16x_BUFG                                  | uut_uart_rx/data_out1[7]_i_1_n_1       |                                               |                2 |              8 |
+|  u_vga_p/pro_data1/color_volt3_reg[11]_i_2_n_1 |                                        |                                               |                3 |              8 |
+|  clk_IBUF_BUFG                                 |                                        |                                               |                6 |             10 |
+|  clk_IBUF_BUFG                                 | XADC1/di_drp                           |                                               |                2 |             10 |
+|  u_vga_p/pro_vga1/vgaBlue[0]_2[0]              |                                        |                                               |                6 |             11 |
+|  u_vga_p/pro_vga1/vgaBlue[0]_1[0]              |                                        |                                               |                8 |             12 |
+|  clk_16x_BUFG                                  |                                        |                                               |                7 |             12 |
+|  u_vga_p/pro_vga1/E[0]                         |                                        |                                               |                8 |             12 |
+|  clk_IBUF_BUFG                                 |                                        | uut_seg/div_clk_0                             |                4 |             14 |
+|  clk_16x_BUFG                                  | uut_uart_rx/clk_16x_cnt[15]_i_2_n_1    | uut_uart_rx/clk_16x_cnt[15]_i_1_n_1           |                5 |             16 |
+|  u_vga_p/pro_vga1/vgaBlue[0]_9[0]              |                                        |                                               |                7 |             19 |
+|  u_vga_p/pro_vga1/vgaBlue[0]_3[0]              |                                        |                                               |                9 |             19 |
+|  uut_uart_rx/vgaRed[3][0]                      |                                        |                                               |               15 |             23 |
+|  clk_IBUF_BUFG                                 |                                        | my_divclk/clk_s_1                             |                6 |             24 |
+|  uut_clk/inst/clk_out1                         |                                        |                                               |               18 |             26 |
+|  clk_IBUF_BUFG                                 |                                        | my_divclk/clk_16x_0                           |                8 |             31 |
+|  n_0_7688_BUFG                                 |                                        |                                               |               19 |             32 |
+|  row_reg[127]_i_1_n_1                          |                                        |                                               |               49 |            128 |
+|  clk_s_BUFG                                    |                                        |                                               |               63 |            133 |
++------------------------------------------------+----------------------------------------+-----------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     4 |
+| 4      |                     9 |
+| 5      |                     3 |
+| 7      |                     3 |
+| 8      |                     8 |
+| 10     |                     2 |
+| 11     |                     1 |
+| 12     |                     3 |
+| 14     |                     1 |
+| 16+    |                    10 |
++--------+-----------------------+
+
+

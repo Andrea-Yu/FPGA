@@ -1,0 +1,103 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Dec 25 17:14:47 2019
+| Host         : Andrea-K running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    32 |
+| Unused register locations in slices containing registers |   124 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              77 |           32 |
+| No           | No                    | Yes                    |             109 |           41 |
+| No           | Yes                   | No                     |              62 |           22 |
+| Yes          | No                    | No                     |             132 |           76 |
+| Yes          | No                    | Yes                    |             149 |           48 |
+| Yes          | Yes                   | No                     |              11 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+-----------------------------------------------------+-------------------------------------+------------------+----------------+
+|               Clock Signal              |                    Enable Signal                    |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-----------------------------------------+-----------------------------------------------------+-------------------------------------+------------------+----------------+
+|  uut_seg/div_clk                        |                                                     | uut_seg/bit_code[5]_i_1_n_0         |                2 |              2 |
+|  clk_IBUF_BUFG                          |                                                     |                                     |                1 |              2 |
+|  cmos_pclk_IBUF_BUFG                    |                                                     |                                     |                3 |              3 |
+|  uut_seg/div_clk                        |                                                     | uut_seg/disp_bit_reg_n_0_[2]        |                2 |              4 |
+|  clk_IBUF_BUFG                          | uut_i2c_timing_ctrl/i2c_stream_cnt                  | uut_ajxd/i2c_config_index_reg[2]    |                1 |              4 |
+|  cmos_pclk_IBUF_BUFG                    | uut_cmos_capture_RGB565/cmos_fps_cnt[3]_i_1_n_0     | uut_i2c_timing_ctrl/byte_flag_r_reg |                1 |              4 |
+|  uut_clk/inst/clk_out2                  |                                                     | uut_ajxd/current_state_reg[2]       |                4 |              4 |
+|  clk_IBUF_BUFG                          | uut_i2c_timing_ctrl/i2c_transfer_en                 | uut_ajxd/i2c_config_index_reg[2]    |                3 |              5 |
+|  uut_seg/div_clk                        |                                                     |                                     |                4 |              7 |
+|  clk_IBUF_BUFG                          | uut_i2c_timing_ctrl/g0_b0__2_n_0                    | uut_ajxd/i2c_config_index_reg[2]    |                5 |              8 |
+|  uut_clk/inst/clk_out2                  | uut_strans/end_check_1                              | uut_ajxd/current_state_reg[2]       |                4 |             10 |
+|  uut_clk/inst/clk_out2                  | uut_strans/start_check_0                            | uut_ajxd/current_state_reg[2]       |                4 |             10 |
+|  uut_clk/inst/clk_out2                  |                                                     | uut_VGA_disp/x_counter[10]_i_1_n_0  |                6 |             11 |
+|  uut_clk/inst/clk_out2                  | uut_VGA_disp/y_counter                              | uut_VGA_disp/y_counter[10]_i_1_n_0  |                5 |             11 |
+|  uut_ajxd/btnclk                        |                                                     |                                     |                4 |             12 |
+|  uut_clk/inst/clk_out2                  |                                                     | uut_seg/div_clk_1                   |                4 |             14 |
+|  cmos_pclk_IBUF_BUFG                    |                                                     | uut_i2c_timing_ctrl/byte_flag_r_reg |                7 |             15 |
+|  clk_IBUF_BUFG                          | uut_i2c_timing_ctrl/i2c_config_index_0              | uut_ajxd/i2c_config_index_reg[2]    |                5 |             16 |
+|  cmos_pclk_IBUF_BUFG                    | uut_cmos_capture_RGB565/cmos_frame_data_r_0         | uut_i2c_timing_ctrl/byte_flag_r_reg |                5 |             16 |
+|  clk_IBUF_BUFG                          | uut_i2c_timing_ctrl/sel__0                          | uut_ajxd/i2c_config_index_reg[2]    |                5 |             17 |
+|  cmos_pclk_IBUF_BUFG                    | uut_cmos_capture_RGB565/cmos_frame_addr[16]_i_1_n_0 | uut_i2c_timing_ctrl/byte_flag_r_reg |                5 |             17 |
+|  uut_VGA_disp/vga_addr1_reg[16]_i_1_n_0 |                                                     |                                     |                5 |             17 |
+|  uut_VGA_disp/vga_addr2_reg[16]_i_1_n_0 |                                                     |                                     |                7 |             17 |
+|  uut_clk/inst/clk_out2                  |                                                     |                                     |                9 |             20 |
+|  uut_clk/inst/clk_out2                  | uut_strans/count_2                                  | uut_ajxd/current_state_reg[2]       |                3 |             20 |
+|  uut_clk/inst/clk_out2                  | uut_strans/counter[23]_i_1_n_0                      | uut_ajxd/current_state_reg[2]       |                7 |             22 |
+|  clk_IBUF_BUFG                          |                                                     | uut_ajxd/i2c_config_index_reg[2]    |               10 |             24 |
+|  clk_IBUF_BUFG                          |                                                     | uut_ajxd/btnclk_0                   |                8 |             31 |
+|  cmos_pclk_IBUF_BUFG                    | uut_ajxd/rst_n                                      |                                     |                6 |             34 |
+|  cmos_pclk_IBUF_BUFG                    | uut_cmos_capture_RGB565/E[0]                        |                                     |               17 |             51 |
+|  cmos_pclk_IBUF_BUFG                    |                                                     | uut_ajxd/Gy_temp2_reg[9]            |               20 |             66 |
+|  cmos_pclk_IBUF_BUFG                    | uut_cmos_capture_RGB565/CE                          |                                     |               97 |            224 |
++-----------------------------------------+-----------------------------------------------------+-------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     2 |
+| 3      |                     1 |
+| 4      |                     4 |
+| 5      |                     1 |
+| 7      |                     1 |
+| 8      |                     1 |
+| 10     |                     2 |
+| 11     |                     2 |
+| 12     |                     1 |
+| 14     |                     1 |
+| 15     |                     1 |
+| 16+    |                    15 |
++--------+-----------------------+
+
+

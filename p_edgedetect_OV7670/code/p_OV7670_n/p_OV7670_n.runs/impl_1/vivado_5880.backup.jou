@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Dec 25 17:13:55 2019
+# Process ID: 5880
+# Current directory: F:/FPGA/p_OV7670/p_OV7670_n/p_OV7670_n.runs/impl_1
+# Command line: vivado.exe -log TOP.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TOP.tcl -notrace
+# Log file: F:/FPGA/p_OV7670/p_OV7670_n/p_OV7670_n.runs/impl_1/TOP.vdi
+# Journal file: F:/FPGA/p_OV7670/p_OV7670_n/p_OV7670_n.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TOP.tcl -notrace

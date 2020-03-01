@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Oct 28 23:24:01 2019
+# Process ID: 15840
+# Current directory: C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/blk_mem_gen_1_synth_1
+# Command line: vivado.exe -log blk_mem_gen_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_1.tcl
+# Log file: C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.vds
+# Journal file: C:/Users/ASUS/Desktop/p_SYSTEM/p_SYSTEM.runs/blk_mem_gen_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_1.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP blk_mem_gen_1, cache-ID = 811504913b6e46e4.
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 28 23:24:09 2019...
